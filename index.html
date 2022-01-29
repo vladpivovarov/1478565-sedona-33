@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <title>Седона</title>
   </head>
   <body>
@@ -52,9 +54,9 @@
         <ul class="advantages-list">
           <li class="advantages-item-wrapper">
             <div class="advantages-item">
-            <h3 class="advantages-item-title">Настоящий городок</h3>
-            <span class="advantages-number">&mdash; &numero;1 &mdash;</span>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class="advantages-item-title">Настоящий городок</h3>
+              <span class="advantages-number">&mdash; &numero;1 &mdash;</span>
+              <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img class="advantages-img" src="" alt="Дома в городе Седона.">
             <ul class="advantages-item-list">
@@ -115,9 +117,8 @@
         <h2 class="subcription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-email" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden">Введите ваш e-mail
-            <input name="email" type="email" placeholder="Ваш e-mail">
-          </label>
+          <label class="visually-hidden" for="email">Введите ваш e-mail</label>
+          <input name="email" type="email" id="email" placeholder="Ваш e-mail">
           <button type="submit">Подписаться</button>
         </form>
       </section>
