@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756257;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-img {
+  background-color: #756257;
+  background-image: url(../images/svg/background-divider.svg),
+                    url(../images/index-background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto, 100% auto;
+  background-position: bottom, top;
+  text-align: center;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.title-description {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-item-wrapper {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #333333;
+}
+
+.advantages-item-wrapper:nth-child(-n+2),
+.advantages-item-wrapper:nth-child(-n+2) h3 {
+  background-color: #83B3D3;
+  color: #ffffff;
+}
+
+.advantages-item-wrapper:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* .advantages-item-wrapper-white,
+.advantages-item-wrapper-white h3 {
+  background-color: #83B3D3;
+  color: #ffffff; } */
+
+.advantages-subparagraph {
+  background-color: #f0f6fa;
+}
+
+.advantages-subparagraph:nth-child(2) {
+  background-color: #ffffff;
+}
+
+
+
+
+
+
+.advantages-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.subparagraph-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.icon-house {
+  width: 75px;
+  height: 72px;
+  background-image: url(../images/svg/advantages-house.svg);
+  margin: 0 auto;
+}
+
+.icon-food {
+  width: 74px;
+  height: 70px;
+  background-image: url(../images/svg/advantages-food.svg);
+  margin: 0 auto;
+}
+
+.icon-souvenirs {
+  width: 64px;
+  height: 76px;
+  background-image: url(../images/svg/advantages-souvenirs.svg);
+  margin: 0 auto;
+}
+
+.subparagraph-description {
+  color: #333333;
+}
+
+.main-search {
+  text-align: center;
+}
+
+.main-search b {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-search p {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-search {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.index-subscription {
+  height: 411px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756257;
+  background-image: url(../images/subscription-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+}
+
+.subcription-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscription-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-subscription {
+  background-color: #83B3D3;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.subscription-email::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-social-item {
+  background-color: #ffffff;
+}
+
+.button-twitter {
+  height: 15px;
+  width: 18px;
+  background-image: url(../images/svg/social-twitter.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 15px;
+}
+
+.button-facebook {
+  height: 18px;
+  width: 10px;
+  background-image: url(../images/svg/social-facebook.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 18px;
+}
+
+.button-youtube {
+  height: 16px;
+  width: 20px;
+  background-image: url(../images/svg/social-youtube.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+}
+
+.phone-link {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
