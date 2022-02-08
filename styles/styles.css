@@ -47,12 +47,12 @@ body {
 
 /* main */
 
-.main-img {
+.index-background-image {
   background-color: #756257;
   background-image: url(../images/svg/background-divider.svg),
                     url(../images/index-background.jpg);
   background-repeat: no-repeat, no-repeat;
-  background-size: 100% auto, 100% auto;
+  background-size: contain, cover;
   background-position: bottom, top;
   text-align: center;
 }
@@ -77,8 +77,7 @@ body {
   color: #000000;
 }
 
-.advantages-item-title,
-.subparagraph-subtitle {
+.advantages-item-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -86,10 +85,21 @@ body {
   color: #000000;
 }
 
-.advantages-item,
-.advantages-item h3 {
+.advantages-item-title-primary {
+  color: #ffffff;
+}
+
+.advantages-item {
   background-color: #83B3D3;
   color: #ffffff;
+}
+
+.subparagraph-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .advantages-item-wrapper:nth-child(n+3) {
@@ -100,29 +110,12 @@ body {
   background-color: #e6f0f6;
 }
 
+.advantages-subparagraph {
+  position: relative;
+}
+
 .advantages-subparagraph:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.icon-house {
-  width: 75px;
-  height: 72px;
-  background-image: url(../images/svg/advantages-house.svg);
-  margin: 0 auto;
-}
-
-.icon-food {
-  width: 74px;
-  height: 70px;
-  background-image: url(../images/svg/advantages-food.svg);
-  margin: 0 auto;
-}
-
-.icon-souvenirs {
-  width: 64px;
-  height: 76px;
-  background-image: url(../images/svg/advantages-souvenirs.svg);
-  margin: 0 auto;
 }
 
 .subparagraph-description {
@@ -135,7 +128,7 @@ body {
   text-align: center;
 }
 
-.main-search b {
+.search-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -143,7 +136,7 @@ body {
   color: #000000;
 }
 
-.main-search p {
+.search-description {
   font-size: 22px;
   line-height: 26px;
 }
@@ -156,13 +149,12 @@ body {
 /* index-subscription */
 
 .index-subscription {
-  height: 411px;
   text-align: center;
   color: #ffffff;
   background-color: #756257;
   background-image: url(../images/subscription-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .subcription-title {
@@ -233,7 +225,7 @@ body {
   background-color: #756257;
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .inner-header {
