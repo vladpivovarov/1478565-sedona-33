@@ -31,6 +31,11 @@ body {
   background-color: #ffffff;
 }
 
+/* img {
+  max-width: 100%;
+  object-fit: contain;
+} */
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -50,6 +55,22 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .reset-indents {
+  margin: 0;
+  padding: 0;
+} */
 
 .first-element {
   order: 0;
@@ -71,11 +92,19 @@ body {
 }
 
 .navigation-logo {
+  position: relative;
+  z-index: 1;
   margin-right: 30px;
+}
+
+.page-header-logo {
+  display: block;
 }
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 500px;
@@ -89,16 +118,24 @@ body {
   justify-content: end;
 }
 
-.navigation-item {
-  margin: 0;
-}
-
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
   font-weight: 700;
   text-decoration: none;
+}
+.navigation-user .navigation-link {
+  min-height: 18px;
+  min-width: 18px;
+}
+.navigation-item-button .button {
+  display: block;
+  border-radius: 4px;
+  width: 130px;
+  padding: 9px 15px 8px;
 }
 
 /* main */
@@ -114,6 +151,9 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
   background-position: bottom, top;
+  margin-top: -5px;
+  padding-top: 51px;
+  padding-bottom: 82px;
   text-align: center;
 }
 
@@ -143,18 +183,21 @@ body {
 
 .advantages-size {
   width: 400px;
-  padding-left: 75px;
-  padding-right: 75px;
+  min-height: 384px;
   box-sizing: border-box;
+  padding: 98px 75px 79px 75px;
 }
 
 .advantages-title {
+  margin: 0;
   font-size: 22px;
   line-height: 36px;
   font-weight: 400;
 }
 
 .title-description {
+  display: block;
+  margin-bottom: 31px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -163,11 +206,22 @@ body {
 }
 
 .advantages-item-title {
+  margin: 0 auto 30px;
+  width: 180px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.advantages-number{
+  display: block;
+  margin-bottom: 30px;
+}
+
+.advantages-description {
+  margin: 0;
 }
 
 .advantages-item-list {
@@ -191,6 +245,9 @@ body {
 }
 
 .subparagraph-subtitle {
+  display: block;
+  margin-top: 23px;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -207,7 +264,7 @@ body {
 }
 
 .advantages-subparagraph {
-  position: relative;
+  padding: ;
 }
 
 .advantages-subparagraph:nth-child(odd) {
@@ -215,7 +272,14 @@ body {
 }
 
 .subparagraph-description {
+  margin: 0;
   color: #333333;
+}
+
+.advantages-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* main-search */
@@ -228,6 +292,8 @@ body {
 }
 
 .search-title {
+  display: block;
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -236,13 +302,20 @@ body {
 }
 
 .search-description {
+  margin: 0;
+  margin-bottom: 56px;
   font-size: 22px;
   line-height: 26px;
 }
 
 .button-search {
+  display: block;
+  width: 575px;
+  margin: 0 auto;
+  padding: 15px 30px;
   font-size: 20px;
   line-height: 36px;
+  border-radius: 10px;
 }
 
 /* index-subscription */
@@ -254,22 +327,43 @@ body {
   background-image: url(../images/subscription-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 90px 200px;
+  padding: 94px 200px;
   box-sizing: border-box;
 }
 
 .subcription-title {
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .subscription-description {
+  margin: 0;
+  margin-bottom: 46px;
   font-size: 22px;
   line-height: 26px;
 }
 
+.subscription-email {
+  display: flex;
+}
+
+.subscription-email-input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding-top: 17px;
+  padding-right: 19px;
+  padding-bottom: 17px;
+  padding-left: 22px;
+}
+
 .button-subscription {
+  border: none;
+  border-radius: 0 10px 10px 0;
+  padding: 18px 34px 16px;
   background-color: #83B3D3;
   color: #ffffff;
   font-size: 20px;
@@ -287,9 +381,12 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
+  padding: 40px 72px 30px;
 }
 
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 150px;
   margin: 0;
   padding: 0;
@@ -325,6 +422,7 @@ body {
 }
 
 .phone-link {
+  max-width: 720px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
