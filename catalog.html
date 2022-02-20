@@ -49,8 +49,8 @@
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+          <li class="breadcrumbs-item breadcrumbs-item-home">
+            <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
               <span class="visually-hidden">Перейти на главную</span>
             </a>
           </li>
@@ -100,7 +100,7 @@
           </fieldset>
 
           <fieldset class="hotel-filter-group">
-            <legend class="hotel-filter-title">Стоимость, ₽:</legend>
+            <legend class="hotel-filter-title filter-title-price">Стоимость, ₽:</legend>
             <ul class="hotel-filter-list">
               <li class="hotel-filter-item">
                 <label class="control" for="cost-min">от</label>
@@ -122,7 +122,7 @@
       </div>
 
       <div class="searching-results container-content">
-      <p>Найдено гостиниц: <b>38</b></p>
+      <p class="searching-results-description">Найдено гостиниц: <b>38</b></p>
 
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
@@ -153,12 +153,12 @@
           </a>
           <span class="product-card-description">Гостиница</span>
           <b class="product-card-price">От 4000 ₽</b>
-          <a class="button button-more" href="#">Подробнее</a>
-          <button class="button button-favorites" type="button">В избранное</button>
+          <a class="button buttons-product-card button-more" href="#">Подробнее</a>
+          <button class="button buttons-product-card button-favorites" type="button">В избранное</button>
           <span class="hotel-stars">
             <span class="visually-hidden">4 звезды</span>
           </span>
-          <b class="rating">Рейтинг: 8,5</b>
+          <b class="rating buttons-product-card">Рейтинг: 8,5</b>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
@@ -167,12 +167,12 @@
           </a>
           <span class="product-card-description">Гостиница</span>
           <b class="product-card-price">От 3000 ₽</b>
-          <a class="button button-more" href="#">Подробнее</a>
-          <button class="button button-favorites" type="button">В избранное</button>
+          <a class="button buttons-product-card button-more" href="#">Подробнее</a>
+          <button class="button buttons-product-card button-favorites" type="button">В избранное</button>
           <span class="hotel-stars">
             <span class="visually-hidden">3 звезды</span>
           </span>
-          <b class="rating">Рейтинг: 8,9</b>
+          <b class="rating buttons-product-card">Рейтинг: 8,9</b>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
@@ -181,12 +181,12 @@
           </a>
           <span class="product-card-description">Гостиница</span>
           <b class="product-card-price">От 2000 ₽</b>
-          <a class="button button-more" href="#">Подробнее</a>
-          <button class="button button-favorites button-is-favorite" type="button">В избранном</button>
+          <a class="button buttons-product-card button-more" href="#">Подробнее</a>
+          <button class="button buttons-product-card button-favorites button-is-favorite" type="button">В избранном</button>
           <span class="hotel-stars">
             <span class="visually-hidden">2 звезды</span>
           </span>
-          <b class="rating">Рейтинг: 9,2</b>
+          <b class="rating buttons-product-card">Рейтинг: 9,2</b>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
@@ -195,12 +195,12 @@
           </a>
           <span class="product-card-description">Гостиница</span>
           <b class="product-card-price">От 3000 ₽</b>
-          <a class="button button-more" href="#">Подробнее</a>
-          <button class="button button-favorites" type="button">В избранное</button>
+          <a class="button buttons-product-card button-more" href="#">Подробнее</a>
+          <button class="button buttons-product-card button-favorites" type="button">В избранное</button>
           <span class="hotel-stars">
             <span class="visually-hidden">2 звезды</span>
           </span>
-          <b class="rating">Рейтинг: 9,2</b>
+          <b class="rating buttons-product-card">Рейтинг: 9,2</b>
         </li>
       </ul>
 
@@ -232,19 +232,19 @@
 
         <div class="filter-number">
           <span>Гостиниц на странице:</span>
-          <select class="select-control">
+          <select class="select-control select-control-number">
             <option value="4">4</option>
             <option value="8">8</option>
             <option value="12">12</option>
           </select>
-          </div>
+        </div>
       </div>
       </section>
     </main>
 
     <div class="inner-subscription">
-      <h2 class="subcription-title subcription-title-inner">Подпишитесь на рассылку</h2>
-      <p class="subscription-description subscription-description-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <h2 class="subcription-title">Подпишитесь на рассылку</h2>
+      <p class="subscription-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="subscription-email" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="email">Введите ваш e-mail</label>
         <input class="subscription-email-input" name="email" type="email" id="email" placeholder="Ваш e-mail">
@@ -253,7 +253,7 @@
     </div>
 
     <footer class="page-footer">
-      <h2 class="visually-hidden" hidden>Контакты</h2>
+      <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button-twitter" href="https://twitter.com/htmlacademy_ru">
