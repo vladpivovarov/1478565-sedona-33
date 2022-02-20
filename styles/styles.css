@@ -453,17 +453,24 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  padding: 15px;
 }
 
 .logo-html-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 150px;
 }
 
 .html-link {
   display: block;
   box-sizing: border-box;
-  padding: 18px 22px;
+}
+
+.logo-html {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* header-catalog */
@@ -616,7 +623,11 @@ body {
   border-radius: 4px;
   padding: 12px 20px 12px 19px;
   background-color: transparent;
+}
 
+.select-control-number {
+  width: 160px;
+  padding-left: 17px;
 }
 
 .type-card {
@@ -761,9 +772,15 @@ body {
 }
 
 .filter-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 23px;
 }
 
+.filter-number span {
+  margin-right: 50px;
+}
 
 
 
