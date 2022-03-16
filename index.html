@@ -130,7 +130,7 @@
         <p class="subscription-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscription-email" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Введите ваш e-mail</label>
-          <input class="subscription-email-input subscription-email-input-index" name="email" type="email" id="email" placeholder="Ваш e-mail">
+          <input class="subscription-email-input subscription-email-input-index" name="email" type="email" id="email" placeholder="Ваш e-mail" required>
           <button class="button button-subscription" type="submit">Подписаться</button>
         </form>
       </div>
@@ -189,6 +189,61 @@
             </a>
           </div>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-hotel-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="wrapper-field-group">
+                <label class="hotel-search-label" for="entry">Дата заезда:</label>
+                <p class="wrapper-field">
+                  <input class="hotel-search-field hotel-search-field-date" type="text" id="entry" name="data-entry" placeholder="Укажите дату" value="27 апреля 2020" required>
+                  <span class="field-caption field-caption-error">Мы не можем отправить вас в прошлое.</span>
+                </p>
+
+                <label class="hotel-search-label" for="departure">Дата выезда:</label>
+                <p class="wrapper-field">
+                  <input class="hotel-search-field hotel-search-field-date" type="text" id="departure" name="data-departure" placeholder="Укажите дату" value="1 сентября 2021" required>
+                  <span class="field-caption">На эти даты есть свободные номера. Пока есть.</span>
+                </p>
+
+                <label class="hotel-search-label" for="adults">Взрослые:</label>
+                <div class="wpapper-button-numbers wrapper-button-numbers-adults">
+                  <button class="hotel-search-form-button-control form-button-minus" type="button">
+                  </button>
+                  <input class="hotel-search-field hotel-search-field-number" type="number" id="adults" name="number-adults"  value="2" min="1" max="99" required readonly>
+                  <button class="hotel-search-form-button-control form-button-plus" type="button">
+                  </button>
+                </div>
+
+                <span  class="hotel-search-label form-label-icon">
+                  <label class="hotel-search-label" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="#83B3D3" xmlns="http://www.w3.org/2000/svg"><path d="M25 12.5a12.5 12.5 0 1 1-25 0 12.5 12.5 0 0 1 25 0Z" />
+                        <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" fill="#fff"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="wpapper-button-numbers wrapper-button-numbers-children">
+                  <button class="hotel-search-form-button-control form-button-minus" type="button">
+                  </button>
+                  <input class="hotel-search-field hotel-search-field-number" type="number" id="children" name="number-children"  value="1" min="0" max="99" required readonly>
+                  <button class="hotel-search-form-button-control form-button-plus" type="button">
+                  </button>
+                </div>
+
+                <button type="submit" class="modal-button-search">Найти</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
