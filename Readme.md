@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Ксения Сорокина](https://up.htmlacademy.ru/htmlcss/33/user/1478565).
-* Наставник: [Анна Вараксина](https://htmlacademy.ru/profile/id153610).
+* Студент: [Владислав Пивоваров](https://up.htmlacademy.ru/htmlcss/33/user/1478565).
+* Наставник: [Денис Чертенко](https://vk.com/den7255).
 
 ---
 
